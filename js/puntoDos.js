@@ -12,7 +12,7 @@ function calcular(){
 
     if(valorTextoCalcular === ''){
         alert('Debe ingresar un texto.');
-        txtTexto.onfocus;
+        txtTexto.focus();
         return;
     }
 
