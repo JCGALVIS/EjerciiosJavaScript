@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Importar fuente de icono de Google-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Importar materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css" media="screen,projection" />
+    <!--Deja que el navegador sepa que el sitio web está optimizado para dispositivos móviles-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <form>
+        <!--Inicio del contenedor de la pagina-->
+        <div class="container">
+            <a href="../index.html">Inicio</a>
+            <h4>Calculadora de saldo con IVA</h4>
+            <div class="row">
+                <div class="input-field col s6">
+                    <input id="txtValor" type="text" class="validate" style="text-align: right;">
+                    <label for="txtValor">Ingrese un valor</label>
+                </div>
+                <div class="input-field col s3">
+                    <input id="txtIva" type="text" class="validate" style="text-align: right;">
+                    <label for="txtIva">Ingrese el porcentaje de IVA</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s1" style="text-align: right;">
+                    <label style="color: black;">Valor IVA:</label>
+                </div>
+                <div class="input-field col s1" style="text-align: right;">
+                    <label style="color: black;" id="lblValorIva">3434</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s1" style="text-align: right;">
+                    <label style="color: black;">Subtotal:</label>
+                </div>
+                <div class="input-field col s1" style="text-align: right;">
+                    <label style="color: black;" id="lblSubTotal">343434</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s1" style="text-align: right;">
+                    <label style="color: black;">Total:</label>
+                </div>
+                <div class="input-field col s1" style="text-align: right;">
+                    <label style="color: black;" id="lblTotal">343434</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6" style="text-align: right;">
+                    <a class="waves-effect waves-light btn-large" onclick="calcular();">Calcular</a>
+                </div>
+            </div>
+        </div>
+        <!--Fin del contenedor de la pagina-->
+    </form>
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<!--JavaScript al final del cuerpo para una carga optimizada-->
+<script type="text/javascript" src="../js/materialize.min.js"></script>
+<script type="text/javascript" src="../js/puntoDos.js"></script>
+
+</html>

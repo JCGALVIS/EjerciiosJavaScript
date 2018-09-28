@@ -14,6 +14,8 @@
     <form>
         <!--Inicio del contenedor de la pagina-->
         <div class="container">
+            <a href="../index.html">Inicio</a>
+            <h4>Calcular valores de un texto</h4>
             <div class="row">
                 <div class="input-field col s6">
                     <input id="txtTexto" type="text" class="validate">
@@ -22,7 +24,22 @@
             </div>
             <div class="row">
                 <div class="input-field col s6" style="text-align: right;">
-                    <a class="waves-effect waves-light btn-large">Calcular</a>
+                    <a class="waves-effect waves-light btn-large" onclick="calcular();">Calcular</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6" style="text-align: right;">
+                    <label style="color: black;" id="lblNumerosCaracteres"></label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6" style="text-align: right;">
+                    <label style="color: black;" id="lblTextoInvertido"></label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6" style="text-align: right;">
+                    <label style="color: black;" id="lblTextoMayuscula"></label>
                 </div>
             </div>
         </div>
@@ -32,5 +49,6 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <!--JavaScript al final del cuerpo para una carga optimizada-->
 <script type="text/javascript" src="../js/materialize.min.js"></script>
+<script type="text/javascript" src="../js/puntoDos.js"></script>
 
 </html>
